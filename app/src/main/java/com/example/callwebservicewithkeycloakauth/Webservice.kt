@@ -6,8 +6,8 @@ import retrofit2.http.GET
 interface Webservice{
 
     @GET("privateAccess/")
-    fun requestPrivateAccess(): Single<String>
+    fun requestPrivateAccess(): Single<TextToAvoidLearingJson>
 
     @GET("publicAccess/")
-    fun requestPublicAccess(): Single<String>
+    fun requestPublicAccess(): Single<TextToAvoidLearingJson>
 }
